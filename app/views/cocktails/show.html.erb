@@ -3,6 +3,10 @@
 </h2>
 
 <%= render "doses/form", cocktail: @cocktail, dose: @dose %>
+<% @cocktail.photos.each do || %>
+  <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
+<% end %>
+
 
 <ul>
   <% @cocktail.doses.each do |dose| %>

@@ -19,6 +19,11 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+gem 'cloudinary', '1.1.0'
+gem "attachinary", "1.3.1"
+gem "jquery-fileupload-rails"
+
+
 
 
 # Use jquery as the JavaScript library
