@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MisterCocktail</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        <%= link_to "MisterCocktail", root_path %>
+      </h1>
+      <%= link_to "Add a cocktail", new_cocktail_path %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
